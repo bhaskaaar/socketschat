@@ -10,7 +10,7 @@ io.on('connection',function(socket){
     console.log('a user connected\n');
     socket.on('chat message',function(msg){
         io.emit('chat message',msg);
-        console.log('message: '+msg);
+        console.log('message by a user: '+msg);
 
     });
     socket.on('disconnect',function(){
